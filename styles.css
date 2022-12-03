@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+  font-weight: 600;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100000;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.nav-logo {
+  position: relative;
+  min-width: 25px;
+  max-height: 50px;
+}
+
+nav {
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+  color: #4a4a4a;
+  font-weight: bolder;
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  background-color: #f78f20;
+  height: 5px;
+  width: 0%;
+  left: 0;
+  bottom: -35px;
+}
+
+nav a:hover {
+  color: #f78f20;
+}
+
+nav a:hover:after {
+  width: 100%;
+  color: #f78f20;
+}
+
+.small-screen-logo-wrapper {
+    display: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  color: #4a4a4a;
+  font-size: 20px;
+}
+
+header .icons {
+  margin-right: 40px;
+}
+
+.fa-user:before {
+  content: "\f007";
+  padding-left: 25px;
+}
+
+.icons i:hover {
+  color: #f78f20;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 92px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: none;
+  position: absolute;
+  top: 127px;
+  right: -60px;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  background: white;
+  color: black;
+  padding: 30px;
+  border: 2px solid grey;
+}
+
+.box:after {
+  position: absolute;
+  top: -19px;
+  right: 13px;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+.box:before {
+  position: absolute;
+  top: -22px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-bottom: 23px solid grey;
+}
+
+.bar {
+  width: 100px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.box p {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.box p:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.box2.active {
+  display: block;
+}
+
+.box2 {
+  display: none;
+  position: absolute;
+  background-color: rgb(240, 239, 239);
+  width: 100vw;
+  left: 0;
+  top: 88px;
+}
+
+.box2 p {
+  padding: 15px 40px;
+  border-bottom: 1px solid grey;
+  color: #666666;
+  font-weight: bolder;
+}
+
+.dropdown:hover .box {
+  display: block;
+}
+
+h1 {
+  color: black;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.shopBTN {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.shopBTN button {
+  background-color: black;
+  color: white;
+  width: 420px;
+  border-radius: 10px;
+  padding: 7px 0;
+  font-size: 15px;
+  font-weight: 900;
+  border-style: none;
+}
+
+.shopBTN button:hover {
+  cursor: pointer !important;
+  background-color: rgba(79, 78, 78, 0.998) !important;
+}
+
+.cards {
+  margin: 10px auto;
+  /* background-color: #f78f20; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1030px;
+}
+
+.card {
+  background-size: cover;
+  height: 425px;
+  width: 250px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-1 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/home/wtfanta/plp-tile-desktop.png");
+}
+.card-2 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/dfzs/mobile/plp-product%20tile-desktop-dfzs.png");
+}
+.card-3 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Orange.png");
+}
+.card-4 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Pineapple.png");
+}
+.card-5 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Strawberry.png");
+}
+.card-6 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Grape.png");
+}
+.card-7 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Peach.png");
+}
+.card-8 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_ZS-Orange.png");
+}
+.card-9 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Pina-Colada.png");
+}
+.card-10 {
+  background-image: url("https://www.fanta.com/content/dam/nagbrands/us/fanta/en/products/Flavor-Tile_Berry.png");
+  /* padding-top: 20px; */
+}
+.card > .imgFront {
+  padding-top: 20px;
+}
+
+.card-1 .exploreBTN,
+.card-2 .exploreBTN,
+.card-8 .exploreBTN {
+  position: relative;
+  top: -27px;
+}
+
+.card-1 p,
+.card-2 p,
+.card-8 p {
+  position: relative;
+  top: -26px;
+}
+
+.imgFront {
+  height: 300px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.light {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  /* padding: 4px; */
+}
+.dark {
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  /* padding: 4px; */
+}
+
+.exploreBTN {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 7px 0;
+  font-size: 15px;
+  font-weight: 900;
+  border-style: none;
+  margin-top: 10px;
+  width: 154px;
+}
+
+.exploreBTN.blue {
+  background-color: rgb(32, 185, 245);
+  color: white;
+  border-radius: 10px;
+  padding: 7px 0;
+  font-size: 15px;
+  font-weight: 900;
+  border-style: none;
+  margin-top: 10px;
+  width: 154px;
+}
+
+.exploreBTN.pink {
+  background-color: rgb(229, 66, 147);
+  color: white;
+  border-radius: 10px;
+  padding: 7px 0;
+  font-size: 15px;
+  font-weight: 900;
+  border-style: none;
+  margin-top: 10px;
+  width: 154px;
+}
+
+.exploreBTN:hover {
+  cursor: pointer !important;
+  background-color: #4a4a4a !important;
+}
+
+.grey-box {
+  background-color: #dddddd;
+  width: 100%;
+  /* height: 250px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.grey-box > img {
+  width: 56px;
+  height: 32px;
+}
+.grey-box > .p1 {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #f78f20;
+}
+.grey-box > .p2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f78f20;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+.grey-box > .p2:hover {
+  background-color: white;
+  color: #f78f20;
+}
+
+.grey-box > .p3 {
+  color: #666666;
+  font-size: 15px;
+  max-width: 920px;
+  padding-top: 43px;
+  font-weight: bolder;
+}
+
+.grey-box > .p3 span {
+  color: #f78f20;
+}
+
+.grey-box > .p3 span:hover {
+  color: #f78f20;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.blue-box {
+  display: flex;
+  background-color: #003289;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.blue-box .left {
+  background-color: #003289;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-box .left .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue-box .left img {
+  cursor: pointer;
+  height: 80px;
+  width: 100px;
+}
+
+.blue-box .left p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.blue-box .icons {
+  text-align: center;
+}
+
+.blue-box .left i {
+  color: white;
+  width: 13vw;
+  transition: transform 0.2s;
+}
+
+.blue-box .left i:hover {
+  transform: scale(1.2);
+}
+
+.blue-box .right {
+  flex: 2;
+  background-color: #003289;
+  display: flex;
+  justify-content: end;
+}
+
+.blue-box .right .flavor-box {
+  background-color: #003289;
+  margin-top: 90px;
+  width: 400px;
+  margin-right: 50px;
+}
+
+.blue-box .right .flavor-box h2 {
+  color: white;
+  font-size: 17px;
+}
+
+.blue-box .right .flavor-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  padding-top: 20px;
+  height: 295px;
+}
+
+.blue-box .right .flavor-box ul li {
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 190px;
+}
+
+.footer {
+  background-color: black;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  border-right: 1px solid white;
+  padding: 0 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer ul li a:hover {
+  cursor: pointer;
+  color: #f78f20;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0 10px;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav {
+    width: unset;
+  }
+  nav a {
+    display: none;
+  }
+
+  header .nav-logo {
+    display: none;
+  }
+
+  header .small-screen-logo-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .small-screen-logo-wrapper img {
+    height: 70px;
+    width: 90px;
+  }
+
+  header .icons {
+    width: unset;
+  }
+
+  header .wide-screen .fa-brands {
+    display: none;
+  }
+
+  
+  header .icons {
+      display: flex;
+      justify-content: end;
+    }
+
+    header .wide-screen.icons {
+        margin: 0;
+    }
+    
+    header .small-screen {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    header .small-screen .fa-brands {
+      padding: 10px;
+    }
+  h1 {
+    font-size: 20px;
+  }
+  .shopBTN button {
+    width: 210px;
+    padding: 4px 0;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+  .blue-box .right {
+    justify-content: flex-start;
+  }
+  .blue-box .right .flavor-box {
+    margin-right: 0;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 0;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .footer ul li {
+    display: block;
+    border-right: none;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .box {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    background: rgb(240, 239, 239);
+    color: black;
+    padding: 30px;
+    border: none;
+    height: 75px;
+  }
+  .box p {
+    text-align: start;
+  }
+  .box:before {
+    display: none;
+  }
+  .box:after {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    background-size: cover;
+    height: 411px;
+    width: 202px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+  }
+  .blue-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blue-box .right .flavor-box {
+    margin-right: 0;
+    width: auto;
+    text-align: center;
+  }
+  .blue-box .right .flavor-box h2 {
+    text-align: center;
+  }
+  .blue-box .right .flavor-box ul {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .blue-box .right .flavor-box ul li {
+    width: auto;
+  }
+  .blue-box .left .social-media {
+    padding-top: 30px;
+  }
+  .box {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    background: rgb(240, 239, 239);
+    color: black;
+    padding: 30px;
+    border: none;
+    height: 75px;
+  }
+  .box p {
+    text-align: start;
+  }
+  .box:before {
+    display: none;
+  }
+  .box:after {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+    .cards {
+        justify-content: center;
+    }
+}
